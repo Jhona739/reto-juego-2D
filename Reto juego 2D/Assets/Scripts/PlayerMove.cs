@@ -11,7 +11,7 @@ public class PlayerMove : MonoBehaviour
     private float Horizontal;
     private bool Grounded;
     private float LastShoot;
-    private int Health = 2;
+    private int Health = 4;
    
     void Start()
     {

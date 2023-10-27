@@ -7,7 +7,7 @@ public class maxDuke : MonoBehaviour
    public GameObject BulletPrefab;
    public GameObject Frog;
    private float LastShoot;
-   private int Health = 5;
+   private int Health = 1;
 
    private void Update()
    {
