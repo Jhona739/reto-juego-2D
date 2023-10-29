@@ -285,10 +285,11 @@ GameObject:
   m_Component:
   - component: {fileID: 334459672}
   - component: {fileID: 334459671}
-  - component: {fileID: 334459670}
   - component: {fileID: 334459679}
   - component: {fileID: 334459677}
+  - component: {fileID: 334459670}
   - component: {fileID: 334459678}
+  - component: {fileID: 334459680}
   m_Layer: 0
   m_Name: frog
   m_TagString: Player
@@ -377,7 +378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334459669}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.99, y: -0.652, z: 0}
+  m_LocalPosition: {x: -2.347, y: -0.66, z: 0}
   m_LocalScale: {x: 1, y: 0.9934, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -436,6 +437,19 @@ MonoBehaviour:
   BulletPrefab: {fileID: 3952513286866733578, guid: 1eb59d23274ae75419e5713bda50426e, type: 3}
   Speed: 2
   JumpForce: 200
+--- !u!114 &334459680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334459669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f87c956ee7df541aa36792155f2c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 334459670}
 --- !u!4 &337272211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4480795600676588093, guid: 8e24b8324092a024485e08f1617d5310, type: 3}
@@ -2289,7 +2303,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8e546556cda017e468059840c1f9239d, type: 2}
+  - {fileID: 2100000, guid: b364130f8d6be8a47ae28dc8462e6e3a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

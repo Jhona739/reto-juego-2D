@@ -11,8 +11,6 @@ public class FruitCollected : MonoBehaviour
           GetComponent<SpriteRenderer>().enabled=false;
           gameObject.transform.GetChild(0).gameObject.SetActive(true);
           
-          FindObjectOfType<fruitmanager>().frutascollection();
-          
           Destroy(gameObject, 0.5f);
         }
     }

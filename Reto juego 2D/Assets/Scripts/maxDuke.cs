@@ -11,6 +11,9 @@ public class maxDuke : MonoBehaviour
 
    private void Update()
    {
+
+    if(Frog == null) return;
+
     Vector3 direction = Frog.transform.position - transform.position;
     if(direction.x >= 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
     else transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
@@ -33,10 +36,14 @@ public class maxDuke : MonoBehaviour
         GameObject bullet = Instantiate(BulletPrefab, transform.position + direction * 0.1f, Quaternion.identity);
         bullet.GetComponent<Bullet>().SetDirection(direction);
     }
-    
+
     public void Hit()
     {
         Health -= 1;
-        if (Health == 0) Destroy(gameObject);
+        if (Health == 0) 
+        Destroy(gameObject);
     }
+
 }
+
+

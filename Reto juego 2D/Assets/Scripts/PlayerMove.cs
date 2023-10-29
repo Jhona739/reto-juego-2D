@@ -72,5 +72,4 @@ public class PlayerMove : MonoBehaviour
         Health -= 1;
         if (Health == 0) Destroy(gameObject);
     }
-   
 }
