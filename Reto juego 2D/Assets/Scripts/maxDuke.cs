@@ -5,20 +5,20 @@ using UnityEngine;
 public class maxDuke : MonoBehaviour
 {
    public GameObject BulletPrefab;
-   public GameObject Frog;
+   public GameObject Ninja;
    private float LastShoot;
    private int Health = 1;
 
    private void Update()
    {
 
-    if(Frog == null) return;
+    if(Ninja == null) return;
 
-    Vector3 direction = Frog.transform.position - transform.position;
+    Vector3 direction = Ninja.transform.position - transform.position;
     if(direction.x >= 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
     else transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
 
-    float distance = Mathf.Abs(Frog.transform.position.x - transform.position.x);
+    float distance = Mathf.Abs(Ninja.transform.position.x - transform.position.x);
 
     if(distance < 1.0f && Time.time > LastShoot + 0.25f)
     {
